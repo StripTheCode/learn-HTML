@@ -1,0 +1,28 @@
+// in this file all the terminology descrived which is used in the html-structure.html
+
+
+
+<!DOCTYPE html> → Declares the document type as an HTML5 page.
+
+<html> → It is the root element of a web page.
+
+<html lang="en"> → lang="en" says that english is the language of this page, it improves SEO and accessibility.
+
+<head> → head tag Contains metadata 
+        (information about the page, it is not visible in the page).
+
+<meta charset="UTF-8"> → Ensures all characters (like ₹, €, emojis) are displayed correctly.
+            
+    "UTF-8"  → UTF-8 stands fofr Unicode Transformation Format -8 bits.
+                It is an encoding system for UNICODE.
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> → Makes the site responsive on mobile devices.
+
+
+<title> → Defines the page title (seen on the browser tab).
+
+<body> → The visible content of the webpage. We always write in body only.
+
+
+note:- if you want to understande more you can read documentation and also you can google.

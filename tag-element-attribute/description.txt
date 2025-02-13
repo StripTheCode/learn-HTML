@@ -1,0 +1,236 @@
+1. Tag
+
+A tag is like a label that marks the beginning and end of an HTML element. It tells the browser how to interpret or display the content inside it. Tags are written in angle brackets (< >).
+
+Opening tag: The tag that starts an element (e.g., <p>).
+
+Closing tag: The tag that ends the element (e.g., </p>). It’s usually the same as the opening tag, but with a slash before it.
+
+<p>This is a paragraph</p>
+
+<p> is the opening tag.
+</p> is the closing tag.
+
+
+
+2. Element
+
+An element refers to the complete structure that consists of:
+
+The opening tag
+The content (text, other tags, etc.)
+The closing tag
+So, an element is everything within the opening and closing tags.
+
+
+<p>This is a paragraph</p>
+
+<p>This is a paragraph</p> is the element. It includes the opening tag (<p>), the content ("This is a paragraph"), and the closing tag (</p>).
+
+
+3. Attribute
+
+
+An attribute provides additional information or settings about an HTML element. It is placed inside the opening tag and is written as a name-value pair, where the name is the attribute's name, and the value is the setting for that attribute.
+
+Attributes are always inside the opening tag, and they're typically used to define things like:
+
+Where a link should go (href)
+The source of an image (src)
+The color of text (style)
+
+
+<a href="#url">Visit Example</a>
+
+The attribute here is href, and its value is "#url".
+
+The href attribute tells the browser where the link should go when clicked.
+
+
+4. Content
+
+The content is the actual information or data inside the element. It could be text, an image, or other HTML elements.
+
+
+<h1>This is a heading</h1>
+
+The content here is the text: "This is a heading".
+
+Putting it All Together
+Here’s an example of how all these pieces fit:
+
+
+<a href="#url" target="_blank">Click Here</a>
+
+<a> is the opening tag (the anchor element).
+
+href="#url" is the attribute with a value that defines the destination of the link.
+
+target="_blank" is another attribute that tells the browser to open the link in a new tab.
+
+Click Here is the content of the link (what the user clicks).
+
+</a> is the closing tag.
+
+
+Summary:
+Tag: The marker for an HTML element (e.g., <p>, </p>).
+
+Element: The entire structure, including the tag, content, and any attributes (e.g., <p>This is a paragraph</p>).
+
+Attribute: Extra information about an element, placed inside the opening tag (e.g., href, src).
+
+Content: The actual data inside the element (e.g., text, images).
+
+
+
+
+
+<!DOCTYPE html>
+- Declares the document type and version of HTML.
+
+<html lang="en">
+- <html>: The root element of an HTML document.
+- lang="en": Specifies the language of the document.
+
+<head>
+- Contains meta-information about the document.
+
+<meta charset="UTF-8">
+- Specifies the character encoding for the document.
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+- Ensures proper rendering and touch zooming on mobile devices.
+
+<title>Tag-Element-Attribute</title>
+- Sets the title of the document, shown in the browser's title bar or tab.
+
+<body>
+- Contains the content of the HTML document.
+
+<h1> to <h6>
+- Heading tags, used to define headings from largest (<h1>) to smallest (<h6>).
+
+<p>
+- Paragraph tag, used for blocks of text.
+
+<a href="#">
+- Anchor tag, used to create hyperlinks.
+- href: Specifies the URL of the page the link goes to.
+
+<img src="#" alt="Placeholder Image">
+- Image tag, used to display images.
+- src: Specifies the path to the image.
+- alt: Provides alternative text for the image.
+
+<ul> and <ol>
+- Unordered list (<ul>) and ordered list (<ol>), used for lists.
+- <li>: List item, used within <ul> or <ol>.
+
+<table border="1">
+- Table tag, used to display tabular data.
+- border: Specifies the width of the table border.
+- <tr>: Table row.
+- <th>: Table header cell.
+- <td>: Table data cell.
+
+<form action="">
+- Form tag, used for user input.
+- action: Specifies where to send the form data.
+
+<input type="text" placeholder="Enter your name">
+- Input tag, used for various types of user input.
+- type: Specifies the type of input (text, email, password, etc.).
+- placeholder: Provides a hint to the user of what can be entered in the field.
+
+<input type="submit" value="Submit">
+- Submit button, used to submit the form.
+- value: Specifies the text on the button.
+
+<input type="reset" value="Reset">
+- Reset button, used to reset the form fields.
+- value: Specifies the text on the button.
+
+<input type="radio" name="gender" value="male">
+- Radio button, used to select one option from a group.
+- name: Groups radio buttons together.
+- value: Specifies the value of the radio button.
+
+<input type="checkbox" name="hobby" value="Reading">
+- Checkbox, used to select multiple options.
+- name: Groups checkboxes together.
+- value: Specifies the value of the checkbox.
+
+<input type="date">
+- Date input, used to select a date.
+
+<input type="file">
+- File input, used to upload files.
+
+<header>
+- Defines the header section of the document.
+
+<nav>
+- Defines the navigation section of the document.
+
+<section>
+- Defines a section in the document.
+
+<article>
+- Defines an article.
+
+<aside>
+- Defines content aside from the main content.
+
+<footer>
+- Defines the footer section of the document.
+
+<details>
+- Creates a collapsible content area.
+- <summary>: Defines a visible heading for the <details> element.
+
+<dialog open>
+- Defines a dialog box or window.
+- open: Specifies that the dialog is open.
+
+<figure>
+- Groups media content with a caption.
+- <figcaption>: Defines a caption for the <figure> element.
+
+<mark>
+- Highlights text.
+
+<progress value="70" max="100">
+- Displays a progress bar.
+- value: Specifies the current value of the progress.
+- max: Specifies the maximum value of the progress.
+
+<time datetime="2025-02-13">
+- Represents a specific time.
+- datetime: Specifies the date and time.
+
+<video width="320" height="240" controls>
+- Embeds video content.
+- width: Specifies the width of the video.
+- height: Specifies the height of the video.
+- controls: Adds video controls (play, pause, etc.).
+
+<audio controls>
+- Embeds audio content.
+- controls: Adds audio controls (play, pause, etc.).
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid black;">
+- Used for drawing graphics via JavaScript.
+- id: Specifies a unique id for the canvas.
+- width: Specifies the width of the canvas.
+- height: Specifies the height of the canvas.
+- style: Adds inline CSS styles.
+
+<iframe src="#url" height="200" width="300">
+- Embeds another webpage.
+- src: Specifies the URL of the page to embed.
+- height: Specifies the height of the iframe.
+- width: Specifies the width of the iframe.
+
+<script>
+- Embeds or references executable code (JavaScript).
