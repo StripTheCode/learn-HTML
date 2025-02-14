@@ -1,0 +1,118 @@
+A form in HTML is a section of a document that contains interactive controls to submit information to a web server. Forms are used to collect user input and send it to a server for processing.
+
+### Form Tags and Attributes
+
+1. `<form>`: This is the main container for the form elements. It can contain various input elements like text fields, checkboxes, radio buttons, submit buttons, etc.
+    - `action`: Specifies the URL where the form data should be sent.
+    - `method`: Specifies the HTTP method to be used when sending the form data. Common values are `GET` and `POST`.
+
+    Example:
+    
+    <form action="/submit-form" method="post">
+         <!-- form elements go here -->
+    </form>
+    
+
+2. `<input>`: This tag is used to create various types of input fields.
+    - `type`: Specifies the type of input (e.g., text, password, submit, checkbox, radio, etc.).
+    - `name`: Specifies the name of the input field, which is used to identify the form data after it is submitted.
+    - `value`: Specifies the initial value of the input field.
+
+    Example:
+    
+    <input type="text" name="username" value="">
+    <input type="password" name="password">
+    <input type="submit" value="Submit">
+    
+
+3. `<label>`: This tag is used to define labels for input elements. It improves accessibility and usability.
+    - `for`: Specifies which form element a label is bound to.
+
+    Example:
+    
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+    
+
+4. `<textarea>`: This tag is used to create a multi-line text input.
+    - `name`: Specifies the name of the textarea.
+    - `rows` and `cols`: Specify the visible number of lines and the width of the textarea.
+
+    Example:
+    
+    <textarea name="message" rows="4" cols="50"></textarea>
+    
+
+5. `<select>`: This tag is used to create a drop-down list.
+    - `name`: Specifies the name of the drop-down list.
+
+    Example:
+    
+    <select name="options">
+         <option value="option1">Option 1</option>
+         <option value="option2">Option 2</option>
+    </select>
+    
+
+6. `<button>`: This tag is used to create a clickable button.
+    - `type`: Specifies the type of button (e.g., submit, reset, button).
+
+    Example:
+    
+    <button type="submit">Submit</button>
+
+    There are more tags in form You can read DOCUMENTATION.
+    
+
+### Example Form
+
+<form action="/submit-form" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="10" max="120" required><br><br>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+
+    <h4>Select Your Gender:</h4>
+    <label for="male">Male:</label>
+    <input type="radio" id="male" name="gender" value="male" checked>
+    <label for="female">Female:</label>
+    <input type="radio" id="female" name="gender" value="female"><br><br>
+
+    <h4>Choose Your Hobbies:</h4>
+    <label for="reading">Reading</label>
+    <input type="checkbox" id="reading" name="hobby" value="reading">
+    <label for="writing">Writing</label>
+    <input type="checkbox" id="writing" name="hobby" value="writing">
+    <label for="singing">Singing</label>
+    <input type="checkbox" id="singing" name="hobby" value="singing"><br><br>
+
+    <label for="country">Choose Your Country:</label>
+    <select id="country" name="country">
+        <option value="nepal">Nepal</option>
+        <option value="india" selected>India</option>
+        <option value="bhutan">Bhutan</option>
+        <option value="bangladesh">Bangladesh</option>
+        <option value="afghanistan">Afghanistan</option>
+    </select><br><br>
+
+    <label for="file">Upload File:</label>
+    <input type="file" id="file" name="file"><br><br>
+
+    <label for="message">Enter Your Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="30" minlength="15" required></textarea><br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</form>
+
+IF YOU WANT TO LEARN MORE ABOUT HTML FORM YOU CAN READ DOCUMENTATION AND SEARCH ON GOOGLE.

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <section>
+        <h1>Form In HTML (without using CSS)</h1>
+        
+        <form action="#" method="post" id="form-data">
+            <!--
+                ✔ Name
+                ✔ Email
+                ✔ Password
+                ✔ Phone Number
+                ✔ Gender (Radio Buttons)
+                ✔ Hobbies (Checkboxes)
+                ✔ Country Selection (Dropdown)
+                ✔ File Upload
+                ✔ Message (Textarea)
+                ✔ Submit & Reset Buttons 
+            -->
+                <!-- input = text -->
+                <label for="name">Name : </label>
+                <input type="text" name="name" id="name" placeholder="enter your name" autofocus required><br><br>
+
+                <!-- input = email -->
+                <label for="email">Email : </label>
+                <input type="email" name="email" id="email" placeholder="enter your email" required><br><br>
+
+                <!-- input = password -->
+                 <label for="password">Password :</label>
+                <input type="password" name="password" id="password" placeholder="enter your password" minlength="8" maxlength="15" required><br><br>
+
+                <!-- input = number -->
+                <label for="age">Age : </label>
+                <input type="number" name="age" id="age" placeholder="enter your age" min="10" max="120" required><br><br>
+
+                <!-- input = tel -->
+                <label for="phoneNumber">Phone : </label>
+                <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="enter your mobile" maxlength="10" pattern="[0-9]{10}" required><br><br>
+
+
+                <h4>Select Your Gender :</h4>
+
+                <!-- input = radio -->
+                <label for="male">Male : </label>
+                <input type="radio" name="gender" value="male" id="male" checked>
+
+                <label for="female">Female : </label>
+                <input type="radio" name="gender" value="female" id="female">
+
+                <h4>Choose Your Hobbies :</h4>
+                <!-- input= checkbox -->
+                <label for="reading">reading</label>
+                <input type="checkbox" name="hobby" id="reading" value="reading">
+
+                <label for="writing">Writing</label>
+                <input type="checkbox" name="hobby" id="writing" value="writing">
+
+                <label for="singing">Singing</label>
+                <input type="checkbox" name="hobby" id="singing" value="singing"><br><br>
+
+                <!-- input= dropbox -->
+                <label for="country">Choose Your Country : </label>
+                <select name="country" id="country">
+                    <option value="nepal">Nepal</option>
+                    <option value="india" selected>India</option>
+                    <option value="bhutan">Bhutan</option>
+                    <option value="bangladesh">Bangladesh</option>
+                    <option value="afganistan">Afganistan</option>
+                </select> <br><br>
+
+                <!-- input = file -->
+                <label for="file">Upload File</label>
+                <input type="file" name="file" id="file"><br><br>
+
+                <!-- text area  -->
+                <label for="message">Enter Your Message : </label><br>
+                <textarea name="message" id="message" rows="4" cols="30" required placeholder="Enter Your Message minimum 15 charector" minlength="15" ></textarea><br><br>
+
+                <!-- input = submit -->
+                <input type="submit" value="Submit">
+
+                <!-- input= reset -->
+                <input type="reset" value="Reset">  
+        </form>
+    </section>
+
+</body>
+</html>
