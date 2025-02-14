@@ -1,0 +1,48 @@
+Tables in HTML5
+
+Tables are used to display data in a tabular format, which is a grid of rows and columns. HTML5 provides a set of elements to create and manage tables.
+
+1. <table>: This element is used to create a table.
+2. <tr>: This element defines a row in a table.
+3. <th>: This element defines a header cell in a table. It is usually displayed in bold and centered.
+4. <td>: This element defines a standard cell in a table.
+5. <caption>: This element provides a title or caption for the table.
+6. <thead>: This element groups the header content in a table.
+7. <tbody>: This element groups the body content in a table.
+8. <tfoot>: This element groups the footer content in a table.
+9. <colgroup>: This element is used to group columns in a table.
+10. <col>: This element is used to apply styles or attributes to specific columns.
+
+Example of a simple table:
+
+<table>
+    <caption>Sample Table</caption>
+    <thead>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+        </tr>
+        <tr>
+            <td>Data 4</td>
+            <td>Data 5</td>
+            <td>Data 6</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Footer 1</td>
+            <td>Footer 2</td>
+            <td>Footer 3</td>
+        </tr>
+    </tfoot>
+</table>
+
+Tables can also be styled using CSS to improve their appearance and usability.
