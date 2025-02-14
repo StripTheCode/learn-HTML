@@ -1,0 +1,160 @@
+HTML5 Semantic Tags with Explanation
+
+1. <article>
+    - Represents an independent, self-contained content block.
+    - Used for blog posts, news articles, or forum posts.
+    Example:
+        <article>
+            <h2>Latest Smartphone Review</h2>
+            <p>This smartphone has a great camera and battery life.</p>
+        </article>
+
+2. <aside>
+    - Represents secondary content related to the main content.
+    - Used for sidebars, advertisements, or related links.
+    Example:
+        <aside>
+            <h3>Related Products</h3>
+            <ul>
+                <li>Wireless Earbuds</li>
+                <li>Gaming Mouse</li>
+            </ul>
+        </aside>
+
+3. <details>
+    - Creates a collapsible section for additional information.
+    - Used for FAQs or extra details.
+    Example:
+        <details>
+            <summary>What is HTML5?</summary>
+            <p>HTML5 is the latest version of the HyperText Markup Language.</p>
+        </details>
+
+4. <dialog>
+    - Represents a pop-up or modal dialog box.
+    - Used for alerts, login forms, or confirmation messages.
+    Example:
+        <dialog open>
+            <p>This is a modal dialog box.</p>
+            <button onclick="this.parentElement.close()">Close</button>
+        </dialog>
+
+5. <figcaption> and <figure>
+    - <figure> is used to group media elements like images or charts.
+    - <figcaption> provides a caption for the figure.
+    Example:
+        <figure>
+            <img src="phone.jpg" alt="Smartphone">
+            <figcaption>Latest Smartphone Model</figcaption>
+        </figure>
+
+6. <footer>
+    - Represents the footer section of a webpage or section.
+    - Used for copyright info, links, or contact details.
+    Example:
+        <footer>
+            <p>&copy; 2024 My Electronics Store</p>
+        </footer>
+
+7. <header>
+    - Represents the introductory section of a webpage.
+    - Contains logos, navigation, and headings.
+    Example:
+        <header>
+            <h1>My Electronics Store</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+8. <main>
+    - Represents the primary content of a webpage.
+    - Excludes repeated content like sidebars and footers.
+    Example:
+        <main>
+            <h2>Welcome to Our Store</h2>
+            <p>We sell the best electronic gadgets.</p>
+        </main>
+
+9. <mark>
+    - Highlights important text.
+    - Used for search results or emphasized content.
+    Example:
+        <p>The best phone for gaming is <mark>XYZ Pro</mark>.</p>
+
+10. <nav>
+    - Represents navigation links.
+    - Used for menus or site navigation.
+    Example:
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="products.html">Products</a>
+        </nav>
+
+11. <section>
+    - Groups related content into sections.
+    - Used for breaking up content into meaningful parts.
+    Example:
+        <section>
+            <h2>Latest Gadgets</h2>
+            <p>Check out our newest arrivals.</p>
+        </section>
+
+12. <summary>
+    - Defines a visible heading inside a <details> element.
+    - Used for expandable sections.
+    Example:
+        <details>
+            <summary>More Info</summary>
+            <p>Our store offers free shipping worldwide.</p>
+        </details>
+
+13. <time>
+    - Represents a date or time.
+    - Used for articles, blogs, or events.
+    Example:
+        <p>Sale starts on <time datetime="2024-02-14">February 14, 2024</time>.</p>
+
+14. <address>
+    - Represents contact information.
+    - Used for footer sections or contact pages.
+    Example:
+        <address>
+            123 Tech Street, Electronics City, India
+        </address>
+
+15. <abbr>
+    - Represents an abbreviation or acronym.
+    - Helps improve accessibility and readability.
+    Example:
+        <p>We use <abbr title="HyperText Markup Language">HTML</abbr> for structuring web pages.</p>
+
+16. <cite>
+    - Used to reference the title of a work such as a book, movie, or website.
+    Example:
+        <p>The book <cite>Artificial Intelligence: A Modern Approach</cite> is a great resource.</p>
+
+17. <code>
+    - Represents a block of code or inline code snippet.
+    Example:
+        <p>Use <code>console.log("Hello, World!");</code> to print a message in JavaScript.</p>
+
+18. <kbd>
+    - Represents keyboard input.
+    - Used to display keyboard shortcuts.
+    Example:
+        <p>Press <kbd>Ctrl + S</kbd> to save the file.</p>
+
+19. <samp>
+    - Represents sample output from a computer program.
+    Example:
+        <p>The command returned <samp>Success!</samp>.</p>
+
+20. <var>
+    - Represents a variable in mathematical expressions or programming.
+    Example:
+        <p>The formula for area is <var>A</var> = π<var>r</var><sup>2</sup>.</p>
