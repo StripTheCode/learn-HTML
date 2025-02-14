@@ -1,0 +1,144 @@
+HTML5 Multimedia Tags with Attributes, Examples, and Descriptions
+
+1. <img>
+    - Description: Embeds an image in a webpage.
+    - Attributes:
+        - src: Specifies the image source.
+        - alt: Provides alternate text.
+        - width: Defines the width.
+        - height: Defines the height.
+        - loading: Specifies how the image should load ("lazy", "eager").
+    - Example:
+        <img src="image.jpg" alt="Example Image" width="300" height="200">
+
+
+2.  <audio>
+    - Description: Used to embed audio content in a webpage.
+    - Attributes:
+        - src: Specifies the audio file location.
+        - controls: Adds play, pause, and volume controls.
+        - autoplay: Plays the audio automatically on page load.
+        - loop: Repeats the audio after it ends.
+        - muted: Mutes the audio by default.
+        - preload: Specifies how the browser should load the audio ("auto", "metadata", "none").
+    - Example:
+        <audio src="music.mp3" controls></audio>
+
+3. <video>
+    - Description: Used to embed video content in a webpage.
+    - Attributes:
+        - src: Specifies the video file location.
+        - controls: Adds play, pause, and volume controls.
+        - autoplay: Plays the video automatically on page load.
+        - loop: Repeats the video after it ends.
+        - muted: Mutes the video by default.
+        - poster: Displays an image before the video starts.
+        - width: Specifies the width of the video.
+        - height: Specifies the height of the video.
+        - preload: Specifies how the browser should load the video ("auto", "metadata", "none").
+    - Example:
+        <video src="video.mp4" controls width="640" height="360"></video>
+
+4. <source>
+    - Description: Used to define multiple media sources for <audio> and <video>.
+    - Attributes:
+        - src: Specifies the media file.
+        - type: Defines the MIME type of the media file.
+    - Example:
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+            <source src="video.ogg" type="video/ogg">
+        </video>
+
+5. <svg>
+    - Description: Used for scalable vector graphics (SVG) directly in HTML.
+    - Attributes:
+        - width: Specifies the width.
+        - height: Specifies the height.
+        - viewBox: Defines the coordinate system.
+        - fill: Sets the color of the shapes.
+        - stroke: Defines the border color.
+    - Example:
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+        </svg>
+
+6.  <canvas>
+    - Description: Creates a blank canvas for JavaScript-based drawing and animations.
+    - Attributes:
+        - width: Defines the width.
+        - height: Defines the height.
+    - Example:
+        <canvas id="myCanvas" width="200" height="100"></canvas>
+        <script>
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = "blue";
+            ctx.fillRect(20, 20, 150, 75);
+        </script>
+
+7. <iframe>
+    - Description: Embeds another webpage or external content.
+    - Attributes:
+        - src: Specifies the URL of the embedded page.
+        - width: Defines the width of the iframe.
+        - height: Defines the height of the iframe.
+        - frameborder: Specifies whether the iframe has a border (0 or 1).
+        - allowfullscreen: Allows fullscreen mode.
+    - Example:
+        <iframe src="https://www.example.com" width="800" height="600" frameborder="0"></iframe>
+
+8. <object>
+    - Description: Embeds an external file (PDF, Flash, etc.).
+    - Attributes:
+        - data: Specifies the URL of the object.
+        - type: Defines the MIME type.
+        - width: Sets the width of the object.
+        - height: Sets the height of the object.
+    - Example:
+        <object data="file.pdf" type="application/pdf" width="600" height="400"></object>
+
+9. <param>
+    - Description: Defines parameters for <object> elements.
+    - Attributes:
+        - name: Specifies the parameter name.
+        - value: Specifies the parameter value.
+    - Example:
+        <object data="flash.swf" type="application/x-shockwave-flash">
+            <param name="autoplay" value="true">
+        </object>
+
+70. <picture>
+    - Description: Provides multiple image sources for different screen sizes.
+    - Attributes:
+        - None (but uses <source> inside).
+    - Example:
+        <picture>
+            <source srcset="image-small.jpg" media="(max-width: 600px)">
+            <source srcset="image-large.jpg" media="(min-width: 601px)">
+            <img src="image-default.jpg" alt="Responsive Image">
+        </picture>
+
+11. <track>
+    - Description: Provides text tracks (subtitles, captions) for <video>.
+    - Attributes:
+        - src: Specifies the subtitle file.
+        - kind: Defines the type of text track ("subtitles", "captions", "descriptions", "chapters", "metadata").
+        - srclang: Specifies the language of the track.
+        - label: Provides a label for the track.
+        - default: Sets the track as default.
+    - Example:
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+            <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English" default>
+        </video>
+
+12. <embed>
+    - Description: Embeds an external multimedia element (e.g., Flash, PDFs, etc.).
+    - Attributes:
+        - src: Specifies the file to embed.
+        - type: Defines the MIME type.
+        - width: Sets the width of the embedded element.
+        - height: Sets the height of the embedded element.
+    - Example:
+        <embed src="file.pdf" type="application/pdf" width="600" height="400"> 

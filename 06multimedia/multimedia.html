@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+</head>
+<body>
+    <h1>Multimedia in HTML page</h1>
+    <p>Multimedia elements in HTML allow us to add images, audio, and video to web pages, making them more interactive and engaging.</p>
+    <h2>Different type/s of Multimedia</h2>
+    <ol> <strong>
+        <li>Image</li>
+        <li>Audio</li>
+        <li>Video</li>
+        <li>SVG</li>
+        <li>CANVAS</li>
+        <li>Embed using iframe</li>
+        </strong>
+    </ol>
+    <!-- image -->
+    <h2>Image : </h2>
+    <h4>used tag : <pre><code>&lt;img src="html-5-logo.JPG" alt="html-lgo" width="100px" height="100px"&gt;</code></pre> </h4>
+    <img src="html-5-logo.JPG" alt="html-lgo" width="100px" height="100px">
+
+    <!-- audio -->
+    <h2>Audio : </h2>
+    <h4>used tag : <pre><code>&lt;audio controls&gt; &lt;source src="audio.mp3" type="audio/mp3"&gt; &lt;/audio&gt;</code></pre> </h4>  
+    <audio controls>
+        <source src="audio.mp3" type="audio/mp3">
+        Your browser does not support the audio element.    
+    </audio>
+
+    <!-- video -->
+    <h2>Video : </h2>   
+    <h4>used tag : <pre><code>&lt;video width="320" height="240" controls&gt; &lt;source src="movie.mp4" 
+        type="video/mp4"&gt; &lt;/video&gt;</code></pre> </h4>
+    <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+
+    <!-- svg -->
+    <h2>SVG : </h2>
+    <h4>used tag : <pre><code>&lt;svg width="100" height="100"&gt; &lt;circle cx="50" 
+        cy="50" r="40" stroke="black" stroke-width="3" fill="red" /&gt; &lt;/svg&gt;</code></pre> </h4>
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="pink" />
+    </svg>
+
+    <!-- canvas -->
+    <h2>CANVAS : </h2>
+    <h4>used tag : <pre><code>&lt;canvas id="myCanvas" width="200" height="100" style="border:1px 
+        solid #000000;"&gt;&lt;/canvas&gt;</code></pre> </h4> 
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "blue";
+        ctx.fillRect(10, 20, 180, 75);
+    </script>
+
+    <!-- iframe -->
+    <h2>iframe : </h2>
+    <h4>used tag : <pre><code>&lt;iframe src="https://www.youtube.com/"
+        width="460" height="265" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</code></pre> </h4>
+    <iframe src="https://www.youtube.com/" width="460" height="265" frameborder="0" allowfullscreen></iframe>
+
+    <h2>You can read description.txt in the same directory</h2>
+    <h3>If you want to learn more read refer documentation and you can search on google.</h3>
+</body>
+</html>
