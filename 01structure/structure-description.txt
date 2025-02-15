@@ -25,4 +25,4 @@
 <body> → The visible content of the webpage. We always write in body only.
 
 
-note:- if you want to understande more you can read documentation and also you can google.
+note:- If you want to learn more you can read documentation and also you can google it.
