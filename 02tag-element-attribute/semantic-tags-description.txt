@@ -39,7 +39,7 @@ HTML5 Semantic Tags with Explanation
             <button onclick="this.parentElement.close()">Close</button>
         </dialog>
 
-5. <figcaption> and <figure>
+5. <figure> and <figcaption>
     - <figure> is used to group media elements like images or charts.
     - <figcaption> provides a caption for the figure.
     Example:
