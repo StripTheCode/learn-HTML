@@ -1,34 +1,66 @@
-HTML lists are a fundamental part of web development, providing a way to organize and display content in a structured manner. There are three main types of lists in HTML: ordered lists, unordered lists, and description lists.
+HTML lists are a fundamental part of web development, 
+providing a way to organize and display content in a structured manner.
+There are three main types oflists in HTML: 
+    ordered lists, 
+    unordered lists, and 
+    description lists.
 
-1. **Ordered Lists (`<ol>`)**:
-    Ordered lists are used when the order of items is important. Each item in an ordered list is numbered.
-    
-    <ol>
-      <li>First item</li>
-      <li>Second item</li>
-      <li>Third item</li>
-    </ol>
-   
+HTML List Tags and Attributes with Descriptions
 
-2. **Unordered Lists (`<ul>`)**:
-    Unordered lists are used when the order of items is not important. Each item in an unordered list is marked with a bullet point.
-    
-    <ul>
-      <li>First item</li>
-      <li>Second item</li>
-      <li>Third item</li>
-    </ul>
-   
+1. <ul> (Unordered List)
+    - Description: Defines a list with bullet points.
+    - Attributes:
+        - type: Specifies the bullet style (disc, circle, square) (Deprecated in HTML5).
+        
+        - In HTML5 :-
 
-3. **Description Lists (`<dl>`)**:
-    Description lists are used to display name-value pairs, such as terms and their definitions.
-    
-    <dl>
-      <dt>HTML</dt>
-      <dd>HyperText Markup Language</dd>
-      <dt>CSS</dt>
-      <dd>Cascading Style Sheets</dd>
-    </dl>
+            <ul style="list-style-type: disk;">
+                <li>Item 1</li>
+                <li>Item 2</li>
+            </ul>
+
+2. <ol> (Ordered List)
+    - Description: Defines a list with numbered items.
+    - Attributes:
+        - type: Specifies the numbering type (1, A, a, I, i).
+        - start: Specifies the starting number.
+        - reversed: Displays the list in reverse order.
+    - Example:
+        <ol start="5">
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ol>
+
+3. <li> (List Item)
+    - Description: Represents an item inside <ul> or <ol>.
+    - Attributes:
+        - value: Specifies the number for ordered lists (Only works in <ol>).
+    - Example:
+        <ol>
+            <li value="10">Custom Numbered Item</li>
+        </ol>
+
+4. <dl> (Description List)
+    - Description: Defines a list of terms with descriptions.
+    - No specific attributes.
+    - Example:
+        <dl>
+            <dt>HTML</dt>
+            <dd>Hypertext Markup Language</dd>
+        </dl>
+
+5. <dt> (Description Term)
+    - Description: Defines the term inside a description list.
+    - No specific attributes.
+    - Example:
+        <dt>CSS</dt>
+
+6. <dd> (Description Definition)
+    - Description: Provides a description for a <dt> term.
+    - No specific attributes.
+    - Example:
+        <dd>Cascading Style Sheets</dd>
+
    
 
 ### SEO Best Practices for HTML Lists

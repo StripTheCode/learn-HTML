@@ -46,3 +46,107 @@ Example of a simple table:
 </table>
 
 Tables can also be styled using CSS to improve their appearance and usability.
+
+***********************************************************************
+READ EVERYTHING HERE :-
+
+HTML Table Tags and Attributes with Descriptions
+
+1. <table>
+    - Description: Defines a table in HTML.
+    - Attributes:
+        - border: Specifies the width of the table border.
+        - cellpadding: Sets spacing inside each cell.
+        - cellspacing: Sets spacing between cells.
+        - width: Defines the width of the table.
+        - height: Defines the height of the table.
+        - align: Aligns the table (left, right, center).
+        - bgcolor: Sets background color.
+    - Example:
+        <table border="1" width="100%"></table>
+
+2. <tr> (Table Row)
+    - Description: Defines a row in a table.
+    - Attributes:
+        - bgcolor: Sets background color of the row.
+        - align: Aligns the content (left, right, center).
+        - valign: Aligns content vertically (top, middle, bottom).
+    - Example:
+        <tr bgcolor="lightgray"></tr>
+
+3. <td> (Table Data)
+    - Description: Defines a cell in a table row.
+    - Attributes:
+        - colspan: Merges multiple columns in one cell.
+        - rowspan: Merges multiple rows in one cell.
+        - align: Aligns text (left, right, center).
+        - valign: Aligns text vertically (top, middle, bottom).
+        - bgcolor: Sets background color.
+    - Example:
+        <td colspan="2" align="center">Merged Cell</td>
+
+4. <th> (Table Header)
+    - Description: Defines a header cell in a table.
+    - Attributes:
+        - colspan: Merges multiple columns in one header cell.
+        - rowspan: Merges multiple rows in one header cell.
+        - align: Aligns text (left, right, center).
+        - valign: Aligns text vertically (top, middle, bottom).
+        - bgcolor: Sets background color.
+        - scope: Specifies if the header is for a row, column, or group (row, col, rowgroup, colgroup).
+    - Example:
+        <th align="left" scope="col">Name</th>
+
+5. <caption>
+    - Description: Defines a table title.
+    - Attributes:
+        - align: Aligns the caption (top, bottom).
+    - Example:
+        <caption align="top">Student Information</caption>
+
+6. <colgroup>
+    - Description: Groups multiple columns for styling.
+    - Attributes:
+        - span: Specifies the number of columns in the group.
+    - Example:
+        <colgroup span="2" style="background-color: lightblue;"></colgroup>
+
+7. <col>
+    - Description: Styles individual columns within a <colgroup>.
+    - Attributes:
+        - span: Specifies the number of columns the styling applies to.
+        - width: Sets the width of the column.
+    - Example:
+        <col span="1" style="background-color: yellow;">
+
+8. <thead>
+    - Description: Groups header rows in a table.
+    - No specific attributes.
+    - Example:
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+
+9. <tbody>
+    - Description: Groups the body content of a table.
+    - No specific attributes.
+    - Example:
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+
+10. <tfoot>
+    - Description: Groups the footer content of a table.
+    - No specific attributes.
+    - Example:
+        <tfoot>
+            <tr>
+                <td colspan="2">Total: 50 Students</td>
+            </tr>
+        </tfoot>

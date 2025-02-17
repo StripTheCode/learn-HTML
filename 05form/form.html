@@ -23,47 +23,99 @@
                 ✔ Submit & Reset Buttons 
             -->
                 <!-- input = text -->
+                <h4>Tag used :</h4> 
+                <p>
+                    &lt;input type="text" name="name" id="name" placeholder="enter your name" autofocus required&gt;
+                </p>
+
                 <label for="name">Name : </label>
-                <input type="text" name="name" id="name" placeholder="enter your name" autofocus required><br><br>
+                <input type="text" name="name" id="name" placeholder="enter your name" autofocus required><br><br><hr>
 
                 <!-- input = email -->
+                <h4>Tag used :</h4> 
+                <p>
+                    &lt;input type="email" name="email" id="email" placeholder="enter your email" required&gt;
+                </p>
+
                 <label for="email">Email : </label>
-                <input type="email" name="email" id="email" placeholder="enter your email" required><br><br>
+                <input type="email" name="email" id="email" placeholder="enter your email" required><br><br><hr>
 
                 <!-- input = password -->
-                 <label for="password">Password :</label>
-                <input type="password" name="password" id="password" placeholder="enter your password" minlength="8" maxlength="15" required><br><br>
+                <h4>Tag used :</h4>
+                <p>
+                    &lt;input type="password" name="password" id="password" placeholder="enter your password" minlength="8" maxlength="15" required&gt;
+                </p>
+                 
+                <label for="password">Password :</label>
+                <input type="password" name="password" id="password" placeholder="enter your password" minlength="8" maxlength="15" required><br><br><hr>
 
                 <!-- input = number -->
+                <h4>Tag used :</h4>
+                <p>
+                    &lt;input type="number" name="age" id="age" placeholder="enter your age" min="10" max="120" required&gt;
+                </p>
+
                 <label for="age">Age : </label>
-                <input type="number" name="age" id="age" placeholder="enter your age" min="10" max="120" required><br><br>
+                <input type="number" name="age" id="age" placeholder="enter your age" min="10" max="120" required><br><br><hr>
 
                 <!-- input = tel -->
-                <label for="phoneNumber">Phone : </label>
-                <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="enter your mobile" maxlength="10" pattern="[0-9]{10}" required><br><br>
+                <h4>Tag used :</h4>
+                <p>
+                    &lt;input type="tel" name="phoneNumber" id="phoneNumber" placeholder="enter your mobile" maxlength="10" pattern="[0-9]{10}" required&gt;
+                </p>
 
+                <label for="phoneNumber">Phone : </label>
+                <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="enter your mobile" maxlength="10" pattern="[0-9]{10}" required><br><br><hr>
 
                 <h4>Select Your Gender :</h4>
-
                 <!-- input = radio -->
+                 <h4>Tag used :</h4>
+                <p>
+                    &lt;input type="radio" name="gender" value="male" id="male" checked&gt;<br>
+                    &lt;input type="radio" name="gender" value="female" id="female"&gt;
+                </p>
+
                 <label for="male">Male : </label>
                 <input type="radio" name="gender" value="male" id="male" checked>
 
                 <label for="female">Female : </label>
-                <input type="radio" name="gender" value="female" id="female">
+                <input type="radio" name="gender" value="female" id="female"><hr>
 
                 <h4>Choose Your Hobbies :</h4>
                 <!-- input= checkbox -->
+                <h4>Tag used :</h4>
+                <p>
+                    &lt;input type="checkbox" name="hobby" id="reading" value="reading" checked&gt;
+                </p>
+                <p>
+                    &lt;input type="checkbox" name="hobby" id="writing" value="writing" checked&gt;
+                </p>
+                <p>
+                    &lt;input type="checkbox" name="hobby" id="singing" value="singing"&gt;
+                </p>
+                
                 <label for="reading">reading</label>
-                <input type="checkbox" name="hobby" id="reading" value="reading">
+                <input type="checkbox" name="hobby" id="reading" value="reading" checked>
 
                 <label for="writing">Writing</label>
-                <input type="checkbox" name="hobby" id="writing" value="writing">
+                <input type="checkbox" name="hobby" id="writing" value="writing" checked>
 
                 <label for="singing">Singing</label>
-                <input type="checkbox" name="hobby" id="singing" value="singing"><br><br>
+                <input type="checkbox" name="hobby" id="singing" value="singing"><br><br><hr>
 
                 <!-- dropbox -->
+                <h4>Tag used :</h4>
+                <pre>
+                    <code>
+                        &lt;select name="country" id="country"&gt;
+                            &lt;option value="nepal"&gt;Nepal&lt;/option&gt;
+                            &lt;option value="india" selected&gt;India&lt;/option&gt;
+                            &lt;option value="bhutan"&gt;Bhutan&lt;/option&gt;
+                            &lt;option value="bangladesh"&gt;Bangladesh&lt;/option&gt;
+                            &lt;option value="afganistan"&gt;Afganistan&lt;/option&gt;
+                        &lt;/select&gt;
+                    </code>
+                </pre>
                 <label for="country">Choose Your Country : </label>
                 <select name="country" id="country">
                     <option value="nepal">Nepal</option>
@@ -71,20 +123,29 @@
                     <option value="bhutan">Bhutan</option>
                     <option value="bangladesh">Bangladesh</option>
                     <option value="afganistan">Afganistan</option>
-                </select> <br><br>
+                </select> <br><br><hr>
 
                 <!-- input = file -->
+                <h4>Tag used :</h4>
+                <p>&lt;input type="file" name="file" id="file"&gt;</p>
                 <label for="file">Upload File</label>
-                <input type="file" name="file" id="file"><br><br>
+                <input type="file" name="file" id="file"><br><br><hr>
 
                 <!-- text area  -->
+                <h4>Tag used :</h4>
+                <p>&lt;textarea name="message" id="message" rows="4" cols="30" required 
+                    placeholder="Enter Your Message minimum 15 charector" minlength="15" &gt;&lt;/textarea&gt;</p>  
                 <label for="message">Enter Your Message : </label><br>
-                <textarea name="message" id="message" rows="4" cols="30" required placeholder="Enter Your Message minimum 15 charector" minlength="15" ></textarea><br><br>
+                <textarea name="message" id="message" rows="4" cols="30" required placeholder="Enter Your Message minimum 15 charector" minlength="15" ></textarea><br><br><hr>
 
                 <!-- input = submit -->
-                <input type="submit" value="Submit">
+                <h4>Tag used :</h4>
+                <p>&lt;input type="submit" value="Submit"&gt;</p>
+                <input type="submit" value="Submit"><hr>
 
                 <!-- input= reset -->
+                <h4>Tag used :</h4>
+                <p>&lt;input type="reset" value="Reset"&gt;</p>
                 <input type="reset" value="Reset">  
         </form>
     </section>
